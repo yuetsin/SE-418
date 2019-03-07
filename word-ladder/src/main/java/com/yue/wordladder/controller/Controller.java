@@ -19,6 +19,6 @@ public class Controller {
         LadderHelper lh = new LadderHelper();
         Dictionary dict = lh.generateDict();
         String[] rst = lh.calculateLadder(start, end, dict);
-        return String.format("<h2>Got it.</h2>You requested a ladder from <b>%s</b> to <b>%s</b>.", start, end);
+        return String.format("<h2>Got it.</h2>You've requested a ladder from <b>%s</b> to <b>%s</b>.", start, end);
     }
 }
