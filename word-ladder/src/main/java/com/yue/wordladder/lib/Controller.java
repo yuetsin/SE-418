@@ -1,5 +1,6 @@
 package com.yue.wordladder.lib;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -10,7 +11,10 @@ public class Controller {
     }
 
     @RequestMapping("/ladder")
-    public String FeaturePage() {
-        return "Here you are.";
+    public String FeaturePage(String start, String end) {
+        LadderHelper lh = new LadderHelper();
+        Dictionary dict = lh.generateDict();
+        String[] rst = lh.getLadder(start, end, dict);
+        return rst.toString();
     }
 }
