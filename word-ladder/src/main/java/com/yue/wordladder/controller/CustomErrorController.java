@@ -1,4 +1,4 @@
-package com.yue.wordladder;
+package com.yue.wordladder.controller;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
