@@ -9,7 +9,5 @@ public class WordLadderApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WordLadderApplication.class, args);
-        LadderHelper ld = new LadderHelper();
-        ld.testFunction();
     }
 }
