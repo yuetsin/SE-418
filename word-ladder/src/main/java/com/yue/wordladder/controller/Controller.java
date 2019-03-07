@@ -1,8 +1,11 @@
 package com.yue.wordladder.controller;
 import com.yue.wordladder.ladder.Dictionary;
 import com.yue.wordladder.ladder.LadderHelper;
+import com.yue.wordladder.utils.Reverser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class Controller {
@@ -18,7 +21,8 @@ public class Controller {
         }
         LadderHelper lh = new LadderHelper();
         Dictionary dict = lh.generateDict();
-        String[] rst = lh.calculateLadder(start, end, dict);
-        return String.format("<h2>Got it.</h2>You've requested a ladder from <b>%s</b> to <b>%s</b>.", start, end);
+        List<String> rst = lh.calculateLadder(start, end, dict);
+
+        return String.format("<h2>Got it.</h2>You've requested a ladder from <b>%s</b> to <b>%s</b>.<br> %s <b> => </b> %s <b> => </b> %s", start, end, start, String.join("<b> => </b>", rst), end);
     }
 }
