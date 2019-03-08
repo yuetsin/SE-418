@@ -21,6 +21,7 @@ public class WordLadderApplicationTests {
     Dictionary dict = lh.generateDict();
 
     @Test
+
     public void testCorrectLadder() {
         Assert.assertEquals(lh.calculateLadder("hit", "dog", dict).get(0), Arrays.asList("hit", "dit", "dig", "dog"));
         Assert.assertEquals(lh.calculateLadder("smile", "dog", dict).get(0), Arrays.asList("smile", "mile", "mil", "mig", "dig", "dog"));
