@@ -18,11 +18,11 @@ public class LadderHelper {
 //        Printer p = new Printer();
 //        Set<String> lib = new HashSet<String>(Arrays.asList(dic.getStringArray()));
 
-        if (start.isEmpty()) {
+        if (start == null || start.isEmpty()) {
             throw new WordNotFoundException("Must provide the start word.");
         }
 
-        if (end.isEmpty()) {
+        if (end == null || end.isEmpty()) {
             throw new WordNotFoundException("Must provide the end word.");
         }
 
