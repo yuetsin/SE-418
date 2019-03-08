@@ -1,10 +1,11 @@
 package com.yue.wordladder.controller;
 import com.yue.wordladder.ladder.Dictionary;
 import com.yue.wordladder.ladder.LadderHelper;
-import com.yue.wordladder.utils.Reverser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.List;
 
 @RestController
@@ -21,8 +22,16 @@ public class Controller {
         }
         LadderHelper lh = new LadderHelper();
         Dictionary dict = lh.generateDict();
-        List<String> rst = lh.calculateLadder(start, end, dict);
+        List<String> rst;
+        try {
+            rst = lh.calculateLadder(start, end, dict).get(0);
 
-        return String.format("<h2>Got it.</h2>You've requested a ladder from <b>%s</b> to <b>%s</b>.<br> %s <b> => </b> %s <b> => </b> %s", start, end, start, String.join("<b> => </b>", rst), end);
+        } catch (Exception e) {
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            e.printStackTrace(pw);
+            return String.format("<h2>So Sorry... No Ladder Found.</h2>Something horrible happens: <b><font color=\"#FF0000\">%s</font></b> Sincerely apologize for inconvenience.<br><h3><b>Error Stack Trace: </b></h3><br>%s", e.toString(), sw.toString());
+        }
+        return String.format("<h2>Got it.</h2>You've requested a ladder from <b>%s</b> to <b>%s</b>. <br>%s", start, end, String.join("<b> => </b>", rst));
     }
 }
