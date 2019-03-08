@@ -6,3 +6,6 @@ script:
 - cd word-ladder
 - ./mvnw clean install -B
 - ./mvnw test -B
+
+after_success:
+  - ./mvnw clean cobertura:cobertura coveralls:report
