@@ -3,5 +3,6 @@ language: java
 jdk: oraclejdk8
 
 script:
+- cd word-ladder
 - ./mvnw clean install -B
 - ./mvnw test -B
