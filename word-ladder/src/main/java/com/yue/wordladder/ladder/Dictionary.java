@@ -33,7 +33,7 @@ public class Dictionary {
     }
 
     public Dictionary(String resPath) {
-//        InputStream in = this.getClass().getResourceAsStream("/static/dic.t");
+//        InputStream in = this.getClass().getResourceAsStream("/static/dictionary.txt");
         try {
             String rawStr = this.readResource(resPath);
             this.dictionary = rawStr.split("\n");

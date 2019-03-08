@@ -8,7 +8,7 @@ import java.util.*;
 
 public class LadderHelper {
     public static Dictionary generateDict() {
-        return new Dictionary("static/dic.t");
+        return new Dictionary("static/dictionary.txt");
     }
 
     public ArrayList<ArrayList<String>> calculateLadder(String start, String end, Dictionary dic) throws WordNotFoundException, LadderNotFoundException {
