@@ -25,7 +25,6 @@ public class Controller {
         List<String> rst;
         try {
             rst = lh.calculateLadder(start, end, dict).get(0);
-
         } catch (Exception e) {
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
