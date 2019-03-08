@@ -12,7 +12,7 @@ import java.util.List;
 public class Controller {
     @RequestMapping("/")
     public String IndexPage() {
-        return "<h1>Here's my Word Ladder Project.</h1> <h2>Tips</h2> Visit <b> /ladder?start=start_word&end=end_word </b> to use word ladder program.";
+        return "<h1>Here's my Word Ladder Project.</h1> <h2>Tips</h2> Visit <b> /ladder?start=start_word&end=end_word </b> to use word ladder program.<br><b>Notice: </b>This operation may take several seconds, depending on your words' length.";
     }
 
     @RequestMapping("/ladder")
