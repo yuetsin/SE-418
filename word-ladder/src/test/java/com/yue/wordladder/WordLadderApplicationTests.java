@@ -4,13 +4,17 @@ import com.yue.wordladder.exceptions.LadderNotFoundException;
 import com.yue.wordladder.exceptions.WordNotFoundException;
 import com.yue.wordladder.ladder.Dictionary;
 import com.yue.wordladder.ladder.LadderHelper;
+import com.yue.wordladder.res.ResourceUtil;
+import com.yue.wordladder.utils.Printer;
+import com.yue.wordladder.utils.Reverser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Arrays;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 
 @RunWith(SpringRunner.class)
@@ -43,5 +47,38 @@ public class WordLadderApplicationTests {
         lh.calculateLadder(null, "wheat", dict);
         lh.calculateLadder("smile", null, dict);
         lh.calculateLadder("AnyWayNotAWord", "smile", dict);
+    }
+
+    @Test
+    public void testReverser() {
+        Reverser reverser = new Reverser();
+        Assert.assertEquals(reverser.reverseList(Arrays.asList("dog", "dig", "dit", "hit")), Arrays.asList("hit", "dit", "dig", "dog"));
+    }
+
+
+    @Test
+    public void testPrinter() {
+        Printer printer = new Printer();
+        Set<String> set = new HashSet<>(Arrays.asList("smile", "smiler", "sailer", "mailer", "maimer", "mammer", "hammer"));
+        Queue<String> queue = new LinkedList<>(Arrays.asList("smile", "smiler", "sailer", "mailer", "maimer", "mammer", "hammer"));
+        printer.printSet(set);
+        printer.printQueue(queue);
+    }
+
+    @Test
+    public void testNormallyReadResources() throws FileNotFoundException {
+        ResourceUtil rU = new ResourceUtil();
+
+        try {
+            rU.getResourceReader("static/dictionary.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(expected = FileNotFoundException.class)
+    public void testAbnormallyReadResources() throws FileNotFoundException {
+        ResourceUtil rU = new ResourceUtil();
+        rU.getResourceReader("NonExistResFile");
     }
 }

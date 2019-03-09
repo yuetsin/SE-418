@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class ResourceUtil {
 
 
-    public static Reader getResourceReader(String name) throws FileNotFoundException{
+    public static Reader getResourceReader(String name) throws FileNotFoundException {
         InputStream is = null;
         try {
             is = ResourceUtil.class.getClassLoader().getResourceAsStream(getCPResourcePath(name));
