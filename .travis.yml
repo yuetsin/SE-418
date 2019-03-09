@@ -8,4 +8,4 @@ script:
 - ./mvnw test -B
 
 after_success:
-  - ./mvnw clean cobertura:cobertura coveralls:report
+- mvn clean -DTRAVIS_JOB_ID=$TRAVIS_JOB_ID cobertura:cobertura coveralls:report
