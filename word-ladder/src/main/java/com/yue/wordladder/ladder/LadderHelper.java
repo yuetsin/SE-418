@@ -128,44 +128,44 @@ public class LadderHelper {
         }
         result.add(path);
     }
-
-    private Set<String> getFollowing(String current, Set<String> dict) {
-        Set<String> nextWords = new HashSet<>();
-        String temp;
-//        Printer p = new Printer();
-        for (int i = 0; i < current.length(); i++) {
-            StringBuilder sb = new StringBuilder(current);
-            for (char c = 'a'; c <= 'z'; c++) {
-                sb.setCharAt(i, c);
-                temp = sb.toString();
-                if (dict.contains(temp)) {
-                    nextWords.add(temp);
-                }
-            }
 //
-            sb = sb.deleteCharAt(i);
-
-            temp = sb.toString();
-            if (dict.contains(temp)) {
-                nextWords.add(temp);
-            }
-        }
-//        System.out.println(String.format("Word %s goes to ...", current));
-//        p.printSet(nextWords);
-
-        for (int i = 0; i < current.length() + 1; i++) {
-            for (char c = 'a'; c <= 'z'; c++) {
-                StringBuilder sb = new StringBuilder(current);
-                sb.insert(i, c);
-                temp = sb.toString();
-                if (dict.contains(temp)) {
-                    nextWords.add(temp);
-                }
-            }
-        }
-
-        return nextWords;
-    }
+//    private Set<String> getFollowing(String current, Set<String> dict) {
+//        Set<String> nextWords = new HashSet<>();
+//        String temp;
+////        Printer p = new Printer();
+//        for (int i = 0; i < current.length(); i++) {
+//            StringBuilder sb = new StringBuilder(current);
+//            for (char c = 'a'; c <= 'z'; c++) {
+//                sb.setCharAt(i, c);
+//                temp = sb.toString();
+//                if (dict.contains(temp)) {
+//                    nextWords.add(temp);
+//                }
+//            }
+////
+//            sb = sb.deleteCharAt(i);
+//
+//            temp = sb.toString();
+//            if (dict.contains(temp)) {
+//                nextWords.add(temp);
+//            }
+//        }
+////        System.out.println(String.format("Word %s goes to ...", current));
+////        p.printSet(nextWords);
+//
+//        for (int i = 0; i < current.length() + 1; i++) {
+//            for (char c = 'a'; c <= 'z'; c++) {
+//                StringBuilder sb = new StringBuilder(current);
+//                sb.insert(i, c);
+//                temp = sb.toString();
+//                if (dict.contains(temp)) {
+//                    nextWords.add(temp);
+//                }
+//            }
+//        }
+//
+//        return nextWords;
+//    }
 
     void calcNeighbours(HashMap<String, HashSet<String>> neighbours, String str, HashSet<String> dict) {
         int length = str.length();
