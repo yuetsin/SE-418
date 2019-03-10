@@ -1,5 +1,7 @@
 package com.yue.wordladder;
 
+import com.yue.wordladder.controller.Controller;
+import com.yue.wordladder.controller.CustomErrorController;
 import com.yue.wordladder.exceptions.LadderNotFoundException;
 import com.yue.wordladder.exceptions.WordNotFoundException;
 import com.yue.wordladder.ladder.Dictionary;
@@ -11,6 +13,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.FileNotFoundException;
@@ -28,6 +31,16 @@ public class WordLadderApplicationTests {
     public void startServer() {
         WordLadderApplication wLA = new WordLadderApplication();
         wLA.main(new String[]{});
+
+    }
+
+    @Test
+    public void testControllers() {
+        Controller ct = new Controller();
+//        CustomErrorController eCT = new CustomErrorController();
+        ct.IndexPage();
+        ct.FeaturePage("hit", "dog");
+        ct.FeaturePage("", "NotAWordAnyWay");
     }
 
     @Test
@@ -80,5 +93,16 @@ public class WordLadderApplicationTests {
     public void testAbnormallyReadResources() throws FileNotFoundException {
         ResourceUtil rU = new ResourceUtil();
         rU.getResourceReader("NonExistResFile");
+    }
+
+    @Test(expected = LadderNotFoundException.class)
+    public void raiseLadderNotFoundException() throws LadderNotFoundException {
+        throw new LadderNotFoundException("LadderNotFoundExceptionRaised");
+    }
+
+
+    @Test(expected = WordNotFoundException.class)
+    public void raiseWordNotFoundException() throws WordNotFoundException {
+        throw new WordNotFoundException("WordNotFoundExceptionRaised");
     }
 }
