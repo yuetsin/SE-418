@@ -1,5 +1,5 @@
 # SE-418
-Repository for 「软件产品设计与用户体验」。
+Repository for `SE-418`，「软件产品设计与用户体验」。
 
 ## Project 1
 Word Ladder Project based on SpringBoot.
