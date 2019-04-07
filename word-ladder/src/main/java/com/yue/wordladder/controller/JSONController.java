@@ -18,6 +18,7 @@ import java.util.List;
 public class JSONController {
     @RequestMapping("/ladder")
     public Response GetJSON(String start, String end) {
+        System.out.println(String.format("Get a JSON Request from %s to %s", start, end));
         Response resp = new Response();
         if (start == null || end == null) {
             resp.status = "bad parameters";
