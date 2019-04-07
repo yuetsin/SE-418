@@ -2,6 +2,7 @@ package com.yue.wordladder;
 
 import com.yue.wordladder.controller.Controller;
 import com.yue.wordladder.controller.CustomErrorController;
+import com.yue.wordladder.controller.JSONController;
 import com.yue.wordladder.exceptions.LadderNotFoundException;
 import com.yue.wordladder.exceptions.WordNotFoundException;
 import com.yue.wordladder.ladder.Dictionary;
@@ -31,7 +32,6 @@ public class WordLadderApplicationTests {
     public void startServer() {
         WordLadderApplication wLA = new WordLadderApplication();
         wLA.main(new String[]{});
-
     }
 
     @Test
@@ -79,9 +79,8 @@ public class WordLadderApplicationTests {
     }
 
     @Test
-    public void testNormallyReadResources() throws FileNotFoundException {
+    public void testNormallyReadResources() {
         ResourceUtil rU = new ResourceUtil();
-
         try {
             rU.getResourceReader("static/dictionary.txt");
         } catch (Exception e) {
@@ -93,6 +92,12 @@ public class WordLadderApplicationTests {
     public void testAbnormallyReadResources() throws FileNotFoundException {
         ResourceUtil rU = new ResourceUtil();
         rU.getResourceReader("NonExistResFile");
+    }
+
+    @Test
+    public void checkJSONOutput()  {
+        JSONController ct = new JSONController();
+        System.out.println(ct.GetJSON("smile", "hammer"));
     }
 
     @Test(expected = LadderNotFoundException.class)
