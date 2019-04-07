@@ -4,7 +4,7 @@ jdk: oraclejdk8
 
 script:
 - cd word-ladder
-- ./mvnw test -B
+- ./mvnw.sh test -B
 
 after_success:
   - mvn clean test jacoco:report coveralls:report
