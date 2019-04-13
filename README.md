@@ -15,3 +15,8 @@ Word Ladder Project with fore-end web pages.
 
 [![Build Status](https://travis-ci.com/yuxiqian/SE-418.svg?branch=master)](https://travis-ci.com/yuxiqian/SE-418)
 [![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)](https://coveralls.io/github/yuxiqian/SE-418?branch=master)
+
+## Project 4
+Usage of Spring Security.
+
+* Notice: Use test account { user, user_password } to log into the console.
