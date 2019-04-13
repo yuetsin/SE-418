@@ -28,6 +28,10 @@ export class ListComponent extends Vue {
     this.axios = axios
   }
 
+  performLogin() {
+    alert('I knew it...')
+  }
+
   mounted () {
     this.$nextTick(() => {
       this.loadItems()
