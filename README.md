@@ -17,6 +17,6 @@ Word Ladder Project with fore-end web pages.
 [![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)](https://coveralls.io/github/yuxiqian/SE-418?branch=master)
 
 ## Project 4
-Try SpringBoot Actuator.
+Usage of Spring Security.
 
-See [Markdown](https://github.com/yuxiqian/SE-418/blob/master/sb-actuator/document.md)
+* Notice: Use test account `{ user, user_password }` to log into the console.
