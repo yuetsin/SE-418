@@ -39,7 +39,7 @@ export class HomeComponent extends Vue {
   startClick () {
     this.loading = true
     HttpRequest.request({
-      url: '/ladder?start=' + this.startWord + '&end=' + this.endWord,
+      url: '/json/ladder?start=' + this.startWord + '&end=' + this.endWord,
       method: 'get'
     }).then(response => {
       if (response['data']['status'] === 'ok') {

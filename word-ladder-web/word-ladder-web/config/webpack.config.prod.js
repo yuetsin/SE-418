@@ -70,7 +70,7 @@ webpackConfig.module.rules = [...webpackConfig.module.rules,
 
 // ensure ts lint fails the build
 webpackConfig.module.rules[0].options = {
-  failOnHint: true
+  failOnHint: false
 }
 
 webpackConfig.plugins = [...webpackConfig.plugins,
