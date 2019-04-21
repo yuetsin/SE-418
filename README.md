@@ -19,4 +19,6 @@ Word Ladder Project with fore-end web pages.
 ## Project 4
 Usage of Spring Security.
 
-* Notice: Use test account `{ user, user_password }` to log into the console.
+* Notice: Use test account `{ user, user_password }` as USER role to log into the console.
+
+Use test account `{ admin, admin_password }` as ADMIN role to log into the console.
