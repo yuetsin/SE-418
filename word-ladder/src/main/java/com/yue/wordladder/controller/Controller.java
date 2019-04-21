@@ -17,7 +17,7 @@ public class Controller {
             return "<h2>Invalid Argument.</h2> Visit <b> /ladder?start=start_word&end=end_word </b> to use word ladder program.";
         }
         LadderHelper lh = new LadderHelper();
-        Dictionary dict = lh.generateDict();
+        Dictionary dict = LadderHelper.generateDict();
         List<String> rst;
         try {
             rst = lh.calculateLadder(start, end, dict).get(0);

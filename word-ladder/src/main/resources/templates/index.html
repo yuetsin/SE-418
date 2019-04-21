@@ -8,8 +8,21 @@
 
 <body>
     <h1>Welcome here!</h1>
-    <p>This is Word Ladder! Click <a th:href="@{/console}">HERE</a> to view console. If you're required to input user
-        name and password, use "user" and "user_password".</p>
+    <p>This is Word Ladder!
+        <br>
+        Click <a th:href="@{/feature}">HERE</a> to use GUI word ladder.
+        <br>
+        Click <a th:href="@{/console}">HERE</a> to view console.
+        <br>
+        <b>Notice: you must be an ADMIN user role to access this console page.</b>
+        <br><br>
+        If you're required to input username and password,
+<br>
+        Use "user" and "user_password" as a USER role.
+        <br>
+        Use "admin" and "admin_password" as an ADMIN role.
+
+    </p>
     <h1>Here's my Word Ladder Project.</h1>
     <h2>Tips</h2> Visit <b> /ladder?start=start_word&end=end_word </b> to use word ladder program.<br>
 
