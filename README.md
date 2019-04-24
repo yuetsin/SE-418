@@ -22,3 +22,12 @@ Usage of Spring Security.
 * Notice: Use test account `{ user, user_password }` as USER role to log into the console.
 
 Use test account `{ admin, admin_password }` as ADMIN role to log into the console.
+
+## Project 5
+
+Dockerfile
+
+Go to [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker/yuxiqian/word-ladder) @ Docker Hub
+
+![Docker Build Status](https://img.shields.io/docker/build/yuxiqian/word-ladder.svg)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/image-size/yuxiqian/word-ladder/latest.svg)
