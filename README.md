@@ -29,5 +29,4 @@ Dockerfile
 
 Go to [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker/yuxiqian/word-ladder) @ Docker Hub
 
-![Docker Build Status](https://img.shields.io/docker/build/yuxiqian/word-ladder.svg)
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/image-size/yuxiqian/word-ladder/latest.svg)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yuxiqian/word-ladder.svg)
