@@ -30,3 +30,4 @@ Dockerfile
 Go to [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker/yuxiqian/word-ladder) @ Docker Hub
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yuxiqian/word-ladder.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder.svg)
