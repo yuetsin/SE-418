@@ -6,9 +6,18 @@
 ./mvnw package
 ```
 
+## Clean and Pack Project
+``` shell
+./mvnw clean package
+```
+
 ## Compile Project
 ``` shell
 ./mvnw compile
+```
+## Compile to Docker Image
+``` shell
+./mvnw install dockerfile:build
 ```
 
 ## Clean Project
