@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM dockerfile/java:oracle-java8
 VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ADD target/demo-0.0.1-SNAPSHOT app.jar
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=local","/app.jar"]
