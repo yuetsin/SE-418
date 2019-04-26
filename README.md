@@ -31,3 +31,15 @@ See [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yuxiqian/word-ladder.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder.svg)
+
+Run 
+``` shell
+docker pull yuxiqian/word-ladder:latest
+```
+to pull the docker image.
+
+Run
+``` shell
+docker run -p 8080:8080 -t yuxiqian/word-ladder
+```
+to run the docker image.
