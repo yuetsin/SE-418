@@ -45,8 +45,8 @@ public class WordLadderApplicationTests {
 
     @Test
     public void testCorrectLadder() {
-        Assert.assertEquals(lh.calculateLadder("hit", "dog", dict).get(0), Arrays.asList("hit", "dit", "dig", "dog"));
-        Assert.assertEquals(lh.calculateLadder("smile", "dog", dict).get(0), Arrays.asList("smile", "mile", "mil", "mig", "dig", "dog"));
+        Assert.assertEquals(lh.calculateLadder("hit", "dog", dict).get(0), Arrays.asList("hit", "hot", "hog", "dog"));
+        Assert.assertEquals(lh.calculateLadder("smile", "dog", dict).get(0), Arrays.asList("smile", "mile", "mil", "dil", "dol", "dog"));
         Assert.assertEquals(lh.calculateLadder("smile", "hammer", dict).get(0), Arrays.asList("smile", "smiler", "sailer", "mailer", "maimer", "mammer", "hammer"));
     }
 
