@@ -11,6 +11,6 @@ public class ConsoleController {
     @RequestMapping("/console")
     @PreAuthorize("hasRole('ADMIN')")
     public String console() {
-        return "console";
+        return "/console.html";
     }
 }
