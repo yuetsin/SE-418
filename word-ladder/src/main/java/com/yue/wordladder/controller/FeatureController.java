@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class FeatureController {
     @RequestMapping(value = {"/feature"}, method = RequestMethod.GET)
     public String feature() {
-        return "feature";
+        return "/feature.html";
     }
 }
