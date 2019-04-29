@@ -27,7 +27,7 @@ Use test account `{ admin, admin_password }` as ADMIN role to log into the conso
 
 Dockerize
 
-See [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker/yuxiqian/word-ladder) @ Docker Hub
+See [yuxiqian/word-ladder](https://hub.docker.com/r/yuxiqian/word-ladder) @ Docker Hub
 
 Run 
 ``` shell
