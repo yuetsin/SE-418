@@ -10,11 +10,11 @@ SJTU Website Anatomy Report.
 
 > Look [here](https://github.com/yuxiqian/SE-418/blob/master/sjtu-website-anatomy/document.md)
 
-## Project 3
+## Project 3 · [![Build Status](https://travis-ci.com/yuxiqian/SE-418.svg?branch=master)](https://travis-ci.com/yuxiqian/SE-418)  ![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)
+
 Word Ladder Project with fore-end web pages.
 
-[![Build Status](https://travis-ci.com/yuxiqian/SE-418.svg?branch=master)](https://travis-ci.com/yuxiqian/SE-418)
-[![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)](https://coveralls.io/github/yuxiqian/SE-418?branch=master)
+
 
 ## Project 4
 Usage of Spring Security.
@@ -23,14 +23,11 @@ Usage of Spring Security.
 
 Use test account `{ admin, admin_password }` as ADMIN role to log into the console.
 
-## Project 5
+## Project 5 · ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yuxiqian/word-ladder.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder.svg)
 
 Dockerize
 
 See [yuxiqian/word-ladder](https://cloud.docker.com/u/yuxiqian/repository/docker/yuxiqian/word-ladder) @ Docker Hub
-
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yuxiqian/word-ladder.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder.svg)
 
 Run 
 ``` shell
