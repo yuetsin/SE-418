@@ -11,7 +11,7 @@ import java.io.StringWriter;
 import java.util.List;
 
 @RestController
-@RequestMapping("/json")
+@RequestMapping("/practical/json")
 public class JSONController {
     @RequestMapping("/ladder")
     public Response GetJSON(String start, String end) {

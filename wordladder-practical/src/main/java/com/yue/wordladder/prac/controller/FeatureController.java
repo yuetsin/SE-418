@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class FeatureController {
-    @RequestMapping(value = {"/feature"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/practical/feature"}, method = RequestMethod.GET)
     public String feature() {
         return "/feature.html";
     }
