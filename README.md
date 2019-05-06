@@ -53,6 +53,6 @@ to run the docker image.
 
 ### Tests
 
-    The Ladder Calculating Service has been deployed to [http://47.103.66.98:8080](http://47.103.66.98:8080), based on Ali Cloud Service.
+The Ladder Calculating Service has been deployed to [`http://47.103.66.98:8080/practical/json/ladder`](http://47.103.66.98:8080), based on Ali Cloud Service.
 
-    The link won't expire until `2019/5/14 00:00`.
+The link won't expire until `2019/5/14 00:00`.
