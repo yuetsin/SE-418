@@ -67,8 +67,12 @@
     </dependencies>
 
     <build>
-
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
@@ -84,23 +88,10 @@
                 </executions>
                 <configuration>
                     <repository>yuxiqian/word-ladder-prac</repository>
-                    <tag>1.1</tag>
+                    <tag>${project.version}</tag>
                     <buildArgs>
-                        <JAR_FILE>word-ladder.prac-1.0-SNAPSHOT</JAR_FILE>
+                        <JAR_FILE>word-ladder.prac-1.0-SNAPSHOT.jar</JAR_FILE>
                     </buildArgs>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
                 </configuration>
             </plugin>
         </plugins>
