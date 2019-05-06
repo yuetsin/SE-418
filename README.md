@@ -40,3 +40,19 @@ Run
 docker run -p 8080:8080 -t yuxiqian/word-ladder
 ```
 to run the docker image.
+
+## Project 6
+
+### Docker Images
+    
+    The original docker image has been split into two separate micro-services.
+
+ * Login Manager Service Docker · ![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder.svg)
+
+ * Ladder Calculating Service Docker · ![Docker Pulls](https://img.shields.io/docker/pulls/yuxiqian/word-ladder-prac.svg)
+
+### Tests
+
+The Ladder Calculating Service has been deployed to [`http://47.103.66.98:8080/practical/json/ladder`](http://47.103.66.98:8080), based on Ali Cloud Service.
+
+The link won't expire until `2019/5/14 00:00`.
