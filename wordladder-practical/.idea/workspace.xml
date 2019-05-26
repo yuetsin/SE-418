@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbed2d0d-1fd1-4e2c-a3a3-cb023bdc8410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../word-ladder/src/main/java/com/yue/wordladder/controller/JSONController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../word-ladder/src/main/java/com/yue/wordladder/controller/JSONController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bbed2d0d-1fd1-4e2c-a3a3-cb023bdc8410" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -265,16 +262,15 @@
       <updated>1557063613323</updated>
       <workItem from="1557063618182" duration="3521000" />
       <workItem from="1557107494414" duration="841000" />
-      <workItem from="1557110147004" duration="401000" />
+      <workItem from="1557110147004" duration="630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4763000" />
+    <option name="totallyTimeSpent" value="4992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-18" y="429" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
