@@ -2,10 +2,9 @@ package com.yue.feignDemo;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "microservice-provider-user", configuration = FeignConfiguration.class, fallback = UserFeignClientFallback.class)
+@FeignClient(name = "sumup-microservice", configuration = FeignConfiguration.class)
 public interface UserFeignClient {
     @GetMapping("/counter/{number}/{plus}")
-    String sumUp();
+    String sumUp(Integer number, Integer plus);
 }
