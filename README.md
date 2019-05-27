@@ -10,7 +10,7 @@ SJTU Website Anatomy Report.
 
 > Look [here](https://github.com/yuxiqian/SE-418/blob/master/sjtu-website-anatomy/document.md)
 
-## Project 3 · [![Build Status](https://travis-ci.com/yuxiqian/SE-418.svg?branch=master)](https://travis-ci.com/yuxiqian/SE-418)  ![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)
+## Project 3 · [![Build Status](https://travis-ci.com/yuetsin/SE-418.svg?branch=master)](https://travis-ci.com/yuxiqian/SE-418)  ![Coverage Status](https://coveralls.io/repos/github/yuxiqian/SE-418/badge.svg?branch=master)
 
 Word Ladder Project with fore-end web pages.
 
