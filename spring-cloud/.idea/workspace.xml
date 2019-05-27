@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bdb804-42cc-414d-80bd-ca823729ef19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/CircuitBraker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/GlobalCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -90,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="273">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -127,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java" />
       </list>
     </option>
   </component>
@@ -255,12 +249,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558959811375</updated>
-      <workItem from="1558959814967" duration="2066000" />
+      <workItem from="1558959814967" duration="2227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2066000" />
+    <option name="totallyTimeSpent" value="2227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="264" y="23" width="1440" height="877" extended-state="0" />
@@ -348,13 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -367,8 +354,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="273">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yue/feignDemo/UserFeignClientFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
